@@ -1,0 +1,12 @@
+.circle{
+    width:18px;
+    height:18px;
+    border-radius: 18px;
+    background-color: #6d28d9;
+    display: inline-block;
+    margin-left: 2px ;
+    padding: 0px;
+  }
+.navbar_fixed{
+    position:sticky;
+}
