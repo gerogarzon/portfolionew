@@ -16,16 +16,16 @@ const Projects = () => {
   return (
     <>
       <div className="flex flex-col md:justify-start 2xl:justify-center">
-        <div className="flex md:w-fit md:px-12 md:my-24 md:pb-24 pt-4 md:my-0 md:px-12 md:pb-6">
-          <h1 className="typewriter w-fit xl:text-2xl text-base self-start md:my-3 2xl:my-12">
+        <div className="flex md:w-fit md:pl-12">
+          <h1 className="typewriter w-fit xl:text-2xl text-base self-start pl-6 pt-2 2xl:my-12">
             Here are some of my projects.
           </h1>
         </div>
         <div className="slide" data-anchor="slide1">
           <Fade right>
-            <div className="flex flex-col">
-              <div className="flex justify-center p-2">
-                <div className="flex flex-col self-center">
+            <div className="flex flex-col md:mt-12">
+              <div className="flex justify-center mt-32 md:mt-0 p-2">
+                <div className="flex flex-col">
                   <span className="text-orange-500 text-lg self-start pb-3 ">
                     &#60;projects&#62;
                   </span>
@@ -70,8 +70,8 @@ const Projects = () => {
           </Fade>
         </div>
         <div className="slide" data-anchor="slide2">
-          <div className="flex flex-col">
-            <div className="flex justify-center p-2">
+          <div className="flex flex-col md:mt-12">
+            <div className="flex justify-center mt-32 md:mt-0 p-2">
               <div className="flex flex-col self-center">
                 <span className="text-orange-500 text-lg self-start pb-3 ">
                   &#60;projects&#62;
@@ -109,8 +109,8 @@ const Projects = () => {
           </div>
         </div>
         <div className="slide" data-anchor="slide3">
-          <div className="flex flex-col">
-            <div className="flex justify-center p-2">
+          <div className="flex flex-col md:mt-12">
+            <div className="flex justify-center mt-32 md:mt-0 p-2">
               <div className="flex flex-col self-center">
                 <span className="text-orange-500 text-lg self-start pb-3 ">
                   &#60;projects&#62;
@@ -148,8 +148,8 @@ const Projects = () => {
           </div>
         </div>
         <div className="slide" data-anchor="slide4">
-          <div className="flex flex-col">
-            <div className="flex justify-center p-2">
+          <div className="flex flex-col md:mt-12">
+            <div className="flex justify-center mt-32 md:mt-0 p-2">
               <div className="flex flex-col self-center">
                 <span className="text-orange-500 text-lg self-start pb-3 ">
                   &#60;projects&#62;
@@ -189,8 +189,8 @@ const Projects = () => {
           </div>
         </div>
         <div className="slide" data-anchor="slide5">
-          <div className="flex flex-col">
-            <div className="flex justify-center p-2">
+          <div className="flex flex-col md:mt-12">
+            <div className="flex justify-center mt-32 md:mt-0 p-2">
               <div className="flex flex-col self-center">
                 <span className="text-orange-500 text-lg self-start pb-3 ">
                   &#60;projects&#62;
@@ -230,8 +230,8 @@ const Projects = () => {
           </div>
         </div>
         <div className="slide" data-anchor="slide6">
-          <div className="flex flex-col">
-            <div className="flex justify-center p-2">
+          <div className="flex flex-col md:mt-12">
+            <div className="flex justify-center mt-32 md:mt-0 p-2">
               <div className="flex flex-col self-center">
                 <span className="text-orange-500 text-lg self-start pb-3 ">
                   &#60;projects&#62;

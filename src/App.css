@@ -7,18 +7,20 @@
 .fp-prev{
   border-width: 30px 30px 30px 0!important;
   border-color: transparent #6d28d9 transparent transparent!important;
-  left:60px;
+  left: 60px !important;
 }
 .fp-next{
   border-width: 30px 0px 30px 30px!important;
   border-color: transparent transparent transparent #6d28d9 !important;
-  right:60px;
+  right: 60px !important;
 }
 @media (max-width: 845px) {
   .fp-prev{
     border-width: 20px 20px 20px 0!important;
+    left: 5px !important;
   }
    .fp-next{
     border-width: 20px 0px 20px 20px!important;
+    right: 5px !important;
   }
 }
