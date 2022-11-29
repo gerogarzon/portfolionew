@@ -1,4 +1,46 @@
-.skills{
-    width:200px;
-    height:400px;
+.about_typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    padding-right: 5px;
+    border-right: .15em solid #f97316; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    animation: 
+      typing .75s steps(7, end) 1s,
+      blink-caret .75s step-end infinite ;
+  }
+  /* The typing effect */
+  @keyframes typing {
+    0% { width: 0 }
+    100% { width: 100%; }
+  }
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent}
+    50% { border-color: #f97316}
+  }
+  .bg_animate{
+    background: 
+    linear-gradient(90deg,#f97316 50%,#6d28d9ed 0) 
+    var(--_p,100%)/200% no-repeat;
+    transition: .5s;
+    border:0;
+  }
+ .bg_animate:hover{
+  --_p:0%;
+ }
+
+ /* .animate_3d {
+  position: relative;
+  width: 300px;
+  height: 150px;
+  transform-style: preserve-3d;
+  animation: animate 30s linear infinite;
 }
+@keyframes animate {
+  0% {
+      transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+      transform: perspective(1000px) rotateY(360deg);
+  }
+} */

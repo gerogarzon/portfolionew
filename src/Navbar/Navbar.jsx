@@ -1,21 +1,34 @@
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import React, { useState, useEffect } from "react";
+import { Fragment } from "react";
+import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 import "./navbar.css";
 
 const navigation = [
-  { name: '<home>', href: '#', current: false },
-  { name: '<skills>', href: '#', current: false },
-  { name: '<projects>', href: '#', current: false },
-  { name: '<contact>', href: '#', current: false },
-]
+  { name: "<home>", href: "#firstPage", current: false },
+  { name: "<skills>", href: "#secondPage", current: false },
+  { name: "<projects>", href: "#thirdPage", current: false },
+  { name: "<contact>", href: "#fourthPage", current: false },
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function Navbar() {
+  const [currentPage, setCurrentPage] = useState("");
+
+  useEffect(() => {
+    var prevHash = window.location.hash;
+    window.setInterval(function () {
+      if (window.location.hash !== prevHash) {
+        prevHash = window.location.hash;
+        setCurrentPage(prevHash);
+      }
+    }, 100);
+  });
+
   return (
     <Disclosure as="nav" className="bg-neutral-900 navbar_fixed">
       {({ open }) => (
@@ -33,25 +46,21 @@ export default function Navbar() {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <div className="flex flex-shrink-0 items-center">
-                  {/* <img
-                    className="hidden h-8 w-auto lg:block"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=violet&shade=700"
-                    alt="Your Company"
-                  /> */}
-                 
-                </div>
-                <div className="hidden sm:ml-6 sm:block">
+                <div className="flex flex-shrink-0 items-center"></div>
+                <div className="hidden sm:ml-6 sm:block" id="menu">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:text-white',
-                          'px-3 py-2 rounded-md text-lg font-medium hover:text-violet-700'
+                          item.current
+                            ? "bg-gray-900 text-white"
+                            : "text-gray-300 hover:text-white",
+                          "px-3 py-2 rounded-md text-lg font-medium hover:outline outline-violet-700",
+                          item.href === currentPage ? "currentPage" : ""
                         )}
-                        aria-current={item.current ? 'page' : undefined}
+                        aria-current={item.current ? "page" : undefined}
                       >
                         {item.name}
                       </a>
@@ -60,15 +69,13 @@ export default function Navbar() {
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                
-
                 {/* Profile dropdown */}
                 <Menu as="div" className="relative ml-3">
                   <div>
                     <Menu.Button className="flex rounded-md bg-neutral-900 text-sm ">
-                        <p className="p-1 text-white text-3xl focus:outline hover:outline outline-violet-700 outline-offset-2 rounded-xl">
-                           Geronim<div className="circle"></div>
-                        </p>          
+                      <p className="p-1 text-white text-3xl focus:outline hover:outline outline-violet-700 outline-offset-2 rounded-xl">
+                        Geronim<div className="circulo-logo"></div>
+                      </p>
                     </Menu.Button>
                   </div>
                   <Transition
@@ -85,7 +92,10 @@ export default function Navbar() {
                         {({ active }) => (
                           <a
                             href="https://www.linkedin.com/in/geronimo-garzon/"
-                            className={classNames(active ? 'bg-violet-600 text-white' : '', 'block px-4 py-2 text-sm text-white ')}
+                            className={classNames(
+                              active ? "bg-violet-600 text-white" : "",
+                              "block px-4 py-2 text-sm text-white "
+                            )}
                           >
                             Linkedin
                           </a>
@@ -94,8 +104,11 @@ export default function Navbar() {
                       <Menu.Item>
                         {({ active }) => (
                           <a
-                            href="#email"
-                            className={classNames(active ? 'bg-violet-600 ' : '', 'block px-4 py-2 text-sm text-white ')}
+                            href="#fourthPage"
+                            className={classNames(
+                              active ? "bg-violet-600 " : "",
+                              "block px-4 py-2 text-sm text-white "
+                            )}
                           >
                             Email
                           </a>
@@ -116,10 +129,12 @@ export default function Navbar() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-violet-700 text-white' : 'hover:bg-violet-700 hover:text-white',
-                    'block px-3 py-2 rounded-md text-base font-medium hover:bg-violet-700'
+                    item.current
+                      ? "bg-violet-700 text-white"
+                      : "hover:bg-violet-700 hover:text-white",
+                    "block px-3 py-2 rounded-md text-base font-medium hover:bg-violet-700"
                   )}
-                  aria-current={item.current ? 'page' : undefined}
+                  aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}
                 </Disclosure.Button>
@@ -129,5 +144,5 @@ export default function Navbar() {
         </>
       )}
     </Disclosure>
-  )
+  );
 }

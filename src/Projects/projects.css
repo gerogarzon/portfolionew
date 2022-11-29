@@ -1,0 +1,26 @@
+.cards{
+    max-width: 900px;
+    max-height: 800px;
+}
+.projects_videos{
+    height: 320px;
+    width: 750px;
+}
+@media (max-width: 950px){
+    .projects_videos{
+        height: 200px;
+        width: 350px;
+    }
+    .fp-table{
+        justify-content: flex-start !important;
+    }
+}
+.link_logo{
+    color:#6d28d9ed;
+    border:4px;
+    width:25px;
+    height:25px;
+}
+ .link_logo:hover{
+  color:#f97316;
+ }

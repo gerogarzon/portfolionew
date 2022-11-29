@@ -1,27 +1,115 @@
-import React from 'react'
+import React from "react";
+import Fade from "react-reveal/Fade";
+import cv from "../assets/cv.pdf";
 
 import "./skills.css";
 
 const Skills = () => {
   return (
-    <div className="h-screen">
-            <div className="h-100 w-100">
-                <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 500" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,500 C 0,500 0,250 0,250 C 192.2666666666667,199.2 384.5333333333334,148.4 539,159 C 693.4666666666666,169.6 810.1333333333332,241.60000000000002 954,267 C 1097.8666666666668,292.4 1268.9333333333334,271.2 1440,250 C 1440,250 1440,500 1440,500 Z" stroke="none" stroke-width="0" fill="#6d28d9" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 250)"></path></svg>
-            </div>
-            <div className="flex justify-center pb-5 px-5">
-                <div className="skills flex flex-col self-center">
-                    <span className="text-orange-500 self-start ">&#60;skills&#62;</span>
-                    <span className="text-2xl self-end pt-3 px-5">HTML5</span>
-                    <span className="text-3xl self-center py-1 px-3">CSS3</span>
-                    <span className="text-xl self-end py-1 px-2">JAVASCRIPT</span>
-                    <span className="text-4xl self-center font-semibold py-2">REACT</span>
-                    <span className="text-2xl self-end py-2">NODE.JS</span>
-                    <span className="text-lg self-start pb-3 pt-1 pl-5">MONGO DB</span>
-                    <span className="text-orange-500 self-end">&#60;/skills&#62;</span>
+    <>
+      <div className="flex flex-col h-screen md:justify-start 2xl:justify-center">
+        <div className="flex w-fit px-4 mt-3 md:px-12 md:py-6">
+          <h1 className="about_typewriter w-fit xl:text-2xl text-lg self-start ">
+            About me.
+          </h1>
+        </div>
+        <div className="flex flex-col md:flex-row justify-center md:py-5 md:px-5">
+          <div className="flex flex-col self-start w-full md:px-6 px-4">
+            <Fade bottom>
+              <span className="text-orange-500 text-lg self-start">
+                &#60;resume&#62;
+              </span>
+            </Fade>
+            <Fade bottom delay={200}>
+              <p className="self-start md:text-xl md:py-1 text-justify">
+                {" "}
+                Graduated in industrial engineering and after 4 years of career
+                working mostly in the areas of finance and commercial I found my
+                passion for software development.
+              </p>
+            </Fade>
+            <Fade bottom delay={400}>
+              <p className="self-start md:text-xl md:py-1 text-justify">
+                Now I'm in this software world for more than a year and a half,
+                currently developing web applications, and eager to continue
+                building my path within this industry.
+              </p>
+            </Fade>
+            <Fade bottom delay={600}>
+              <p className="self-start md:text-xl md:py-1 text-justify">
+                I’m looking to collaborate on challenging projects that push me
+                to enhance my development.
+              </p>
+            </Fade>
+            <Fade bottom delay={800}>
+              <a
+                href={cv}
+                download="Garzon,Geronimo-CV.pdf"
+                type="submit"
+                className="bg_animate w-fit mt-1 md:mt-6 self-start inline-flex justify-end rounded-md bg-violet-700 py-2 px-4 text-sm text-white"
+              >
+                Curriculum
+              </a>
+              <p className="mt-2 text-sm text-gray-500 self-start">
+                Click to download pdf
+              </p>
+            </Fade>
+            <Fade bottom delay={1000}>
+              <span className="text-orange-500 text-lg self-start">
+                &#60;/resume&#62;
+              </span>
+            </Fade>
+          </div>
+          <div className="flex flex-col w-full">
+            <div className="md:w-52 flex flex-col md:self-center px-5">
+              <Fade bottom>
+                <span className="text-orange-500 text-lg self-start">
+                  &#60;skills&#62;
+                </span>
+              </Fade>
+              <div className="flex md:flex-col">
+                <div className="flex flex-col animate_3d">
+                  <Fade bottom delay={200}>
+                    <span className="text-2xl md:self-end p-2 md:pt-3 md:px-5">HTML5</span>
+                  </Fade>
+                  <Fade bottom delay={400}>
+                    <span className="text-3xl md:self-center p-2 md:py-1 md:px-3 ">
+                      CSS3
+                    </span>
+                  </Fade>
+                  <Fade bottom delay={600}>
+                    <span className="text-xl md:self-end p-2 md:py-1 md:px-2 ">
+                      JAVASCRIPT
+                    </span>
+                  </Fade>
                 </div>
+                <div className="flex flex-col animate_3d">
+                  <Fade bottom delay={800}>
+                    <span className="text-4xl md:self-center font-semibold p-2 md:py-2 tracking-wider ">
+                      REACT
+                    </span>
+                  </Fade>
+                  <Fade bottom delay={1000}>
+                    <span className="text-2xl md:self-end p-2 md:py-2">NODE.JS</span>
+                  </Fade>
+                  <Fade bottom delay={1200}>
+                    <span className="text-lg md:self-start p-2 md:pb-3 md:pt-1 md:pl-5 ">
+                      MONGO DB
+                    </span>
+                  </Fade>
+                </div>
+              </div>
+              <Fade bottom delay={1400}>
+                <span className="text-orange-500 text-lg self-start">
+                  &#60;/skills&#62;
+                </span>
+              </Fade>
             </div>
-    </div>
-  )
-}
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
 
-export default Skills
+export default Skills;

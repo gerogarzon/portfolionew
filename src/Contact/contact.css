@@ -1,0 +1,23 @@
+.contact_container{ 
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    height: 100%; 
+}
+@media (max-width: 450px){
+
+    .contact_logo{ 
+        height: 250px;
+    }
+}
+.bg_animate{
+    background: 
+    linear-gradient(90deg,#f97316 50%,#6d28d9ed 0) 
+    var(--_p,100%)/200% no-repeat;
+    transition: .5s;
+    border:0;
+  }
+ .bg_animate:hover{
+  --_p:0%;
+ }
