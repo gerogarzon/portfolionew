@@ -28,8 +28,8 @@ const Home = () => {
     <div className="flex flex-col md:justify-start 2xl:justify-center ">
         
         <div className="flex flex-col h-full md:flex-row pt-0 md:pt-16">
-          <div className="flex flex-col ">
-            <div className="flex flex-col md:pl-14 w-fit self-center md:self-start">
+          <div className="flex flex-col">
+            <div className="flex flex-col md:pl-14 w-fit self-start pl-8 md:pl-0">
             <Slide left>
               <span className="text-orange-500 text-lg self-start">
                 &#60;welcome&#62;
@@ -45,10 +45,10 @@ const Home = () => {
               </Slide>
             </div>
             <Zoom delay={400}>
-            <img className="avatar self-center md:self-start" data-src={gero} alt="avatar" />
+            <img className="avatar self-start pl-8 md:pl-0" data-src={gero} alt="avatar" />
             </Zoom>
           </div>
-          <div className="flex flex-col w-full h-auto self-start md:px-12 md:pl-0 md:pr-24 ">
+          <div className="flex flex-col w-full h-auto self-start px-8 md:px-12 md:pl-0 md:pr-24 ">
             <Fade top delay={600}>
             <div className="codigo">
               <CodeBlock
