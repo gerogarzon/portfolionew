@@ -29,7 +29,7 @@ const Home = () => {
         
         <div className="flex flex-col h-full md:flex-row pt-0 md:pt-16">
           <div className="flex flex-col">
-            <div className="flex flex-col md:pl-14 w-fit self-start pl-8 md:pl-0">
+            <div className="flex flex-col md:pl-14 w-fit self-start pl-8">
             <Slide left>
               <span className="text-orange-500 text-lg self-start">
                 &#60;welcome&#62;
