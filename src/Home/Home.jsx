@@ -8,21 +8,20 @@ import gero from "../assets/gero3.png";
 import "./home.css";
 
 const Home = () => {
-  const code = `    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <title>PORTFOLIO</title>
-    </head>
-    <body>
-        <developer>
-           GERONIMO GARZON
-        </developer>
-        <about_me>
-            INDUSTRIAL ENGINEER
-                            & 
-            FULLSTACK DEVELOPER
-        </about_me>
-    </body>
+  const code = `    <html>
+        <head>
+            <title>PORTFOLIO</title>
+        </head>
+        <body>
+            <developer>
+              GERONIMO GARZON
+            </developer>
+            <about_me>
+                INDUSTRIAL ENGINEER
+                                & 
+                FULLSTACK DEVELOPER
+            </about_me>
+        </body>
     </html>`;
 
   return (
@@ -59,7 +58,7 @@ const Home = () => {
                 theme={shadesOfPurple}
                 wrapLines={true}
                 wrapLongLines={true}
-                highlight="7,8,9,10,11,12,13,14"
+                highlight="6,7,8,9,10,11,12,13"
               />
             </div>
             </Fade>

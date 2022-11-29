@@ -3,6 +3,10 @@
         max-height: 200px;
         width:250px;
     }
+    .codigo{
+        max-height: fit-content;
+        font-size:15px;
+    }
 }
 .codigo span{
     background-color: #6d28d9!important; 
