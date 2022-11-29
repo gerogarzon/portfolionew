@@ -7,7 +7,7 @@ import "./skills.css";
 const Skills = () => {
   return (
     <>
-      <div className="flex flex-col h-screen md:justify-start 2xl:justify-center">
+      <div className="flex flex-col h-full md:justify-start 2xl:justify-center">
         <div className="flex w-fit px-4 mt-3 md:px-12 md:py-6">
           <h1 className="about_typewriter w-fit xl:text-2xl text-lg self-start ">
             About me.
