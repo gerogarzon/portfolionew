@@ -48,7 +48,7 @@ const Home = () => {
             <img className="avatar self-start pl-8 md:pl-0" data-src={gero} alt="avatar" />
             </Zoom>
           </div>
-          <div className="flex flex-col w-full h-auto self-start pl-8 pr-12 md:px-12 md:pl-0 md:pr-24 ">
+          <div className="flex flex-col w-full h-auto self-start pl-8 pr-12 md:px-12 ">
             <Fade top delay={600}>
             <div className="codigo">
               <CodeBlock
