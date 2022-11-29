@@ -68,7 +68,7 @@ const Skills = () => {
                 </span>
               </Fade>
               <div className="flex md:flex-col">
-                <div className="flex flex-col animate_3d">
+                <div className="flex flex-col">
                   <Fade bottom delay={200}>
                     <span className="text-2xl md:self-end p-2 md:pt-3 md:px-5">HTML5</span>
                   </Fade>
@@ -83,7 +83,7 @@ const Skills = () => {
                     </span>
                   </Fade>
                 </div>
-                <div className="flex flex-col animate_3d">
+                <div className="flex flex-col">
                   <Fade bottom delay={800}>
                     <span className="text-4xl md:self-center font-semibold p-2 md:py-2 tracking-wider ">
                       REACT

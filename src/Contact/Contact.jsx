@@ -71,7 +71,7 @@ const Contact = () => {
           </Pulse>
         </div>
         <div className="flex flex-col self-center w-4/5 md:w-2/5 px-4">
-          <span className="text-orange-500 text-lg self-start pb-2">
+          <span className="text-orange-500 text-lg self-start md:pb-2">
             &#60;contact&#62;
           </span>
           <form
@@ -130,7 +130,7 @@ const Contact = () => {
               </button>
             </div>
           </form>
-          <span className="text-orange-500 text-lg self-start pt-2">
+          <span className="text-orange-500 text-lg self-start md:pt-2">
             &#60;/contact&#62;
           </span>
         </div>

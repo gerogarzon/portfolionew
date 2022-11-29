@@ -16,7 +16,7 @@ const Projects = () => {
   return (
     <>
       <div className="flex flex-col md:justify-start 2xl:justify-center">
-        <div className="flex md:w-fit px-12 my-24 pb-24 pt-4 md:my-0 md:px-12 md:pb-6">
+        <div className="flex md:w-fit md:px-12 md:my-24 md:pb-24 pt-4 md:my-0 md:px-12 md:pb-6">
           <h1 className="typewriter w-fit xl:text-2xl text-base self-start md:my-3 2xl:my-12">
             Here are some of my projects.
           </h1>

@@ -1,12 +1,4 @@
-.contact_container{ 
-    position: relative;
-    display:flex;
-    flex-direction: column;
-    justify-content:flex-start;
-    height: 100%; 
-}
 @media (max-width: 450px){
-
     .contact_logo{ 
         height: 250px;
     }

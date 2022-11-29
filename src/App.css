@@ -1,12 +1,9 @@
 .fp-watermark{
-  display: none;
+  display: none!important;
 }
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
- background:#6d28d9;
+ background: #6d28d9 !important;;
 }
-/* .fp-table{
-  justify-content: flex-start!important;
-} */
 .fp-prev{
   border-width: 30px 30px 30px 0!important;
   border-color: transparent #6d28d9 transparent transparent!important;
@@ -20,10 +17,8 @@
 @media (max-width: 845px) {
   .fp-prev{
     border-width: 20px 20px 20px 0!important;
-    border-color: transparent #fff transparent transparent;
   }
    .fp-next{
     border-width: 20px 0px 20px 20px!important;
-    border-color: transparent #fff transparent transparent;
   }
 }
